@@ -1,13 +1,16 @@
 # Adaptive Internal Control for General Reference Velocities in Adaptive Cruise Control
 
-*Implementation and simulation code for Engineering Science thesis supervised by Dr. Mireille Broucke at the University of Toronto*
-*Implementation of "Multi-sinusoidal disturbance rejection for discrete-time uncertain stable systems" (Tomei 2017)*
+* Simulation code for Engineering Science thesis supervised by Dr. Mireille Broucke at the University of Toronto
+
+* Implementation of "Multi-sinusoidal disturbance rejection for discrete-time uncertain stable systems" (Tomei 2017)
 
 ## Overview
 Adaptive internal models can be used for disturbance rejection and output regulation problems. These approaches seek stable controller designs for an unknown plant and unknown disturbance. The models are applicable to the adaptive cruise control (ACC) problem of following a vehicle with a changing velocity. The project set out to implement an adaptive internal model to reject general disturbances for an unknown plant. The controller was examined for stability and performance in the ACC problem for a single follower and a second follower to simulate a platoon. First, control literature on adaptive internal models was reviewed to select a model. A literature review of control methods applied to the adaptive cruise control problem was conducted to examine current approaches. 
 
 The selected model was implemented in MATLAB and simulations of the selected worked examples were performed to replicate results of the selected work. The stability and performance of the implementation was verified for several models and disturbances. Better performance was achieved for pure sinusoid models when the disturbance allows for this model. Simulations of the ACC situations were performed. The single vehicle model achieved stability for multi-sinusoid reference velocities with large settling times. A second follower achieved stability but experienced tracking delays and instability for constant controller parameters indicating string instability.
 
+![Sample output](output/unkMultiSinDist.png)
+![Sample estimation](output/multiSinEstimate.png)
 
 ## MATLAB Instructions:
 
